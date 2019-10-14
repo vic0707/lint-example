@@ -1,0 +1,33 @@
+{
+  "name": "lint-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "lint": "semistandard --verbose | snazzy"
+  },
+  "semistandard": {
+    "parser": "babel-eslint"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "semistandard": "^14.2.0",
+    "snazzy": "^8.0.0"
+  }
+}
